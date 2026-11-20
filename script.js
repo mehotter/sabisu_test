@@ -174,49 +174,44 @@
 })();
 
 
-// One-page behaviour: menu highlights the section in view, links carry the chosen service.
+// Appear on scroll: sections and cards fade and slide in as they enter the screen.
 (() => {
   "use strict";
-  const nav = document.getElementById("site-nav");
-  if (!nav) return;
-  const links = Array.from(nav.querySelectorAll('a[href^="#"]:not(.btn)'));
-  const toggle = document.querySelector(".nav-toggle");
+  if (!("IntersectionObserver" in window)) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-  nav.addEventListener("click", (e) => {
-    if (e.target.closest("a") && nav.classList.contains("is-open") && toggle) toggle.click();
+  const groups = [
+    [".hero2-grid > :first-child, .page-head-row > :first-child, .split > :first-child, .teaser > :first-child, .hive-layout > :first-child, .contact-grid > :first-child", "reveal-left"],
+    [".hero2-grid > :last-child, .split > :last-child, .teaser > :last-child, .contact-grid > :last-child", "reveal-right"],
+    [".hive li, .page-head .seal, .swatch", "reveal-zoom"],
+    [".band-head, .head-row, .trust, .tile, .card, .service, .commitment, .steps li, .belief, .review, .table-wrap, .table-note, .closing, .reach a, .photo-row .ph, .video-ph, .score, .chips, .sample-note, .footer-grid > *", ""],
+  ];
+  const seen = new Set();
+  const items = [];
+  groups.forEach(([selector, variant]) => {
+    document.querySelectorAll(selector).forEach((el) => {
+      if (seen.has(el) || el.closest(".reveal")) return;
+      seen.add(el);
+      el.classList.add("reveal");
+      if (variant) el.classList.add(variant);
+      const index = Array.prototype.indexOf.call(el.parentElement.children, el);
+      el.style.setProperty("--reveal-delay", Math.min(index, 5) * 80 + "ms");
+      items.push(el);
+    });
   });
 
-  const targets = links.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
-  const setCurrent = () => {
-    const line = window.scrollY + window.innerHeight * 0.35;
-    let current = targets[0];
-    targets.forEach((t) => { if (t.getBoundingClientRect().top + window.scrollY <= line) current = t; });
-    links.forEach((a) => {
-      if (current && a.getAttribute("href") === "#" + current.id) a.setAttribute("aria-current", "page");
-      else a.removeAttribute("aria-current");
-    });
+  const done = (el) => {
+    el.classList.remove("reveal", "reveal-left", "reveal-right", "reveal-zoom", "in");
+    el.style.removeProperty("--reveal-delay");
   };
-  let queued = false;
-  window.addEventListener("scroll", () => {
-    if (queued) return;
-    queued = true;
-    requestAnimationFrame(() => { queued = false; setCurrent(); });
-  }, { passive: true });
-  setCurrent();
-
-  const reserve = document.getElementById("reserve-form");
-  document.addEventListener("click", (e) => {
-    const link = e.target.closest("a[data-service]");
-    if (link && reserve) reserve.elements.service.value = link.dataset.service;
-  });
-  const jump = document.querySelector("form[data-jump]");
-  if (jump && reserve) {
-    jump.addEventListener("submit", (e) => {
-      e.preventDefault();
-      reserve.elements.service.value = jump.elements.service.value;
-      if (jump.elements.date.value) reserve.elements.date.value = jump.elements.date.value;
-      document.getElementById("reserve").scrollIntoView();
-      reserve.elements.name.focus({ preventScroll: true });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      observer.unobserve(el);
+      el.classList.add("in");
+      setTimeout(() => done(el), 1400);
     });
-  }
+  }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+  items.forEach((el) => observer.observe(el));
 })();

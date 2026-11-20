@@ -2,9 +2,150 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sabisu</title>
-  <meta http-equiv="refresh" content="0; url=index.html#media">
-  <script>location.replace("index.html" + (location.hash && location.hash !== "#reserve" ? location.hash : "#media"));</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media — Sabisu</title>
+  <meta name="description" content="Sabisu films, brand colours and press information.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%234C582D'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23B4A279' stroke-width='1.6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body><p><a href="index.html#media">Continue to Sabisu</a></p></body>
+<body>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="index.html" aria-label="Sabisu home">Sabisu</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About us</a>
+      <a href="services.html">Services</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="media.html" aria-current="page">Media</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-solid" href="contact.html#reserve">Reserve a visit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap page-head-row">
+      <div>
+        <h1>See Sabisu at work.</h1>
+        <p class="lede">Films, brand materials and press information in one place.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-ruled" aria-labelledby="films-title">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <h2 id="films-title">Films</h2>
+          <p>Our films are being shot. They will appear here, with a link to our YouTube channel, as each one is finished.</p>
+        </div>
+      </div>
+      <!-- PLACEHOLDER: replace each box with a YouTube embed or link once the videos are uploaded. -->
+      <div class="video-grid">
+        <figure class="video-ph"><div>Film coming soon</div><figcaption>Sabisu in two minutes<small>Brand overview</small></figcaption></figure>
+        <figure class="video-ph"><div>Film coming soon</div><figcaption>A visit, start to finish<small>How a repair is done</small></figcaption></figure>
+        <figure class="video-ph"><div>Film coming soon</div><figcaption>In our customers' words<small>Client testimonials</small></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-raised" aria-labelledby="brand-title">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <h2 id="brand-title">Brand colours</h2>
+          <p>Olive green for calm and balance, with golden sand kept for the star and highlights.</p>
+        </div>
+      </div>
+      <div class="swatches">
+        <div class="swatch"><i style="background:#4C582D"></i><span><b>Olive green</b>#4C582D</span></div>
+        <div class="swatch"><i style="background:#989E81"></i><span><b>Sage</b>#989E81</span></div>
+        <div class="swatch"><i style="background:#FBF9F3"></i><span><b>Ivory</b>#FBF9F3</span></div>
+        <div class="swatch"><i style="background:#B4A279"></i><span><b>Golden sand</b>#B4A279</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="press-title">
+    <div class="wrap split">
+      <div class="split-head">
+        <h2 id="press-title">Press and partnerships</h2>
+      </div>
+      <div>
+        <p>For interviews, logo files or partnership enquiries, write to us and we will reply within one working day.</p>
+        <p style="margin-top:1.5rem"><a class="btn" href="mailto:care@sabisu.example">Email care@sabisu.example</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="closing-title">
+    <div class="wrap">
+      <div class="closing">
+        <div>
+          <h2 id="closing-title">Talk to us about your home or your team's.</h2>
+          <p>Lines are open 8 am to 8 pm, every day.</p>
+        </div>
+        <div class="closing-actions">
+          <a class="btn btn-solid" href="contact.html#reserve">Reserve a visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="wordmark" href="index.html">Sabisu</a>
+        <p class="footer-tag">Thoughtful service. Lasting impact.</p>
+      </div>
+      <div>
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Reach us</h2>
+        <ul>
+          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li><a href="mailto:care@sabisu.example">care@sabisu.example</a></li>
+          <li><a href="contact.html#reserve">Reserve a visit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <ul>
+          <li>Visits: 8 am to 8 pm</li>
+          <li>Phone: 8 am to 8 pm</li>
+          <li>Every day of the week</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>© <span data-year>2026</span> Sabisu. All rights reserved.</p>
+      <p>Thoughtful service. Lasting impact.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>

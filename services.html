@@ -2,9 +2,320 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sabisu</title>
-  <meta http-equiv="refresh" content="0; url=index.html#services">
-  <script>location.replace("index.html" + (location.hash && location.hash !== "#reserve" ? location.hash : "#services"));</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services — Sabisu</title>
+  <meta name="description" content="Sabisu services: electrical, plumbing, carpentry and appliance service. What each covers and what it costs.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%234C582D'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23B4A279' stroke-width='1.6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body><p><a href="index.html#services">Continue to Sabisu</a></p></body>
+<body>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="index.html" aria-label="Sabisu home">Sabisu</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About us</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="media.html">Media</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-solid" href="contact.html#reserve">Reserve a visit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap page-head-row">
+      <div>
+        <h1>Four services. Each one done properly.</h1>
+        <p class="lede">Electrical, plumbing, carpentry and appliance service. Each has its own specialists, a clear scope and a fixed price agreed before work begins.</p>
+      </div>
+      <p class="seal" lang="ja" title="Oshinagaki: the menu">お品書き</p>
+    </div>
+  </section>
+
+  <!-- PLACEHOLDER CONTENT: scope, durations and prices below are samples. Replace with your real rate card. -->
+  <div class="wrap">
+
+    <article class="service" id="electrical">
+      <div class="service-glyph">
+        <img class="service-photo" src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?auto=format&fit=crop&w=700&q=70" alt="" loading="lazy">
+        <span class="glyph" lang="ja" aria-hidden="true">電</span>
+        <span class="gloss">電, electricity</span>
+      </div>
+      <div class="service-body">
+        <h2>Electrical</h2>
+        <p>From a switch that sparks to a full safety check of your distribution board. Every job is done by a licensed electrician and tested before we leave.</p>
+        <ul class="includes">
+          <li>Fault finding and short-circuit repair</li>
+          <li>Switches, sockets and regulators replaced</li>
+          <li>Lights, fans and chandeliers installed</li>
+          <li>Distribution board, MCB and earthing work</li>
+          <li>Inverter and UPS wiring</li>
+          <li>Whole-home electrical safety check</li>
+        </ul>
+      </div>
+      <div class="service-side">
+        <dl class="service-facts">
+          <div><dt>Most jobs take</dt><dd>1 to 3 hours</dd></div>
+          <div><dt>Who comes</dt><dd>A licensed electrician</dd></div>
+          <div class="price"><dt>From</dt><dd>₹499</dd></div>
+        </dl>
+        <a class="btn" href="contact.html?service=electrical#reserve">Reserve an electrician</a>
+      </div>
+    </article>
+
+    <article class="service" id="plumbing">
+      <div class="service-glyph">
+        <img class="service-photo" src="https://images.unsplash.com/photo-1771681744660-d3ff70bc24a2?auto=format&fit=crop&w=700&q=70" alt="" loading="lazy">
+        <span class="glyph" lang="ja" aria-hidden="true">水</span>
+        <span class="gloss">水, water</span>
+      </div>
+      <div class="service-body">
+        <h2>Plumbing</h2>
+        <p>Leaks traced to their source, not patched over. We repair and install taps, toilets, drains and water heaters, and leave the area dry and clean.</p>
+        <ul class="includes">
+          <li>Leaks traced and repaired</li>
+          <li>Taps, mixers and showers fitted</li>
+          <li>Toilet and flush tank repair</li>
+          <li>Blocked drains cleared by machine</li>
+          <li>Water heater installation and service</li>
+          <li>Low-pressure and pump problems solved</li>
+        </ul>
+      </div>
+      <div class="service-side">
+        <dl class="service-facts">
+          <div><dt>Most jobs take</dt><dd>1 to 3 hours</dd></div>
+          <div><dt>Who comes</dt><dd>A trained plumber</dd></div>
+          <div class="price"><dt>From</dt><dd>₹499</dd></div>
+        </dl>
+        <a class="btn" href="contact.html?service=plumbing#reserve">Reserve a plumber</a>
+      </div>
+    </article>
+
+    <article class="service" id="carpentry">
+      <div class="service-glyph">
+        <img class="service-photo" src="https://images.unsplash.com/photo-1659930087003-2d64e33181f7?auto=format&fit=crop&w=700&q=70" alt="" loading="lazy">
+        <span class="glyph" lang="ja" aria-hidden="true">木</span>
+        <span class="gloss">木, wood</span>
+      </div>
+      <div class="service-body">
+        <h2>Carpentry</h2>
+        <p>Repairs and fittings in wood, done with a cabinet-maker's care. Doors that close properly, drawers that glide, and shelves that sit level.</p>
+        <ul class="includes">
+          <li>Door, hinge and lock repair</li>
+          <li>Wardrobe shutters and drawer channels</li>
+          <li>Furniture assembly</li>
+          <li>Shelves, mirrors and televisions mounted</li>
+          <li>Bed, sofa and chair repair</li>
+          <li>Small made-to-measure pieces</li>
+        </ul>
+      </div>
+      <div class="service-side">
+        <dl class="service-facts">
+          <div><dt>Most jobs take</dt><dd>1 to 4 hours</dd></div>
+          <div><dt>Who comes</dt><dd>A carpenter and a helper</dd></div>
+          <div class="price"><dt>From</dt><dd>₹599</dd></div>
+        </dl>
+        <a class="btn" href="contact.html?service=carpentry#reserve">Reserve a carpenter</a>
+      </div>
+    </article>
+
+    <article class="service" id="appliance">
+      <div class="service-glyph">
+        <img class="service-photo" src="https://images.unsplash.com/photo-1762341123870-d706f257a12e?auto=format&fit=crop&w=700&q=70" alt="" loading="lazy">
+        <span class="glyph" lang="ja" aria-hidden="true">機</span>
+        <span class="gloss">機, machine</span>
+      </div>
+      <div class="service-body">
+        <h2>Appliance service</h2>
+        <p>Servicing and repair for the machines a home runs on. We diagnose first, quote a fixed price, and fit genuine parts with a bill.</p>
+        <ul class="includes">
+          <li>Air conditioner service and repair</li>
+          <li>Refrigerator repair and gas top-up</li>
+          <li>Washing machine and dryer repair</li>
+          <li>Water purifier service and filters</li>
+          <li>Microwave and oven repair</li>
+          <li>Kitchen chimney and hob service</li>
+        </ul>
+      </div>
+      <div class="service-side">
+        <dl class="service-facts">
+          <div><dt>Most jobs take</dt><dd>1 to 2 hours</dd></div>
+          <div><dt>Who comes</dt><dd>A brand-trained technician</dd></div>
+          <div class="price"><dt>From</dt><dd>₹599</dd></div>
+        </dl>
+        <a class="btn" href="contact.html?service=appliance#reserve">Reserve a technician</a>
+      </div>
+    </article>
+
+  </div>
+
+  <section class="band band-ruled" aria-labelledby="price-title" style="margin-top:var(--gap-section)">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <h2 id="price-title">Common jobs and starting prices</h2>
+          <p>Labour only. Parts are quoted separately after the diagnosis, and you approve the total before work begins.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Service</th><th scope="col">Job</th><th scope="col" class="col-us">From</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Electrical</th><td>Switch or socket replaced</td><td class="num col-us">₹499</td></tr>
+            <tr><th scope="row">Electrical</th><td>Ceiling fan or light installed</td><td class="num col-us">₹699</td></tr>
+            <tr><th scope="row">Electrical</th><td>Whole-home safety check</td><td class="num col-us">₹1,499</td></tr>
+            <tr><th scope="row">Plumbing</th><td>Tap or mixer repaired or replaced</td><td class="num col-us">₹499</td></tr>
+            <tr><th scope="row">Plumbing</th><td>Blocked drain cleared</td><td class="num col-us">₹799</td></tr>
+            <tr><th scope="row">Plumbing</th><td>Water heater installed</td><td class="num col-us">₹899</td></tr>
+            <tr><th scope="row">Carpentry</th><td>Door, hinge or lock repaired</td><td class="num col-us">₹599</td></tr>
+            <tr><th scope="row">Carpentry</th><td>Television or shelf mounted</td><td class="num col-us">₹699</td></tr>
+            <tr><th scope="row">Carpentry</th><td>Furniture assembled</td><td class="num col-us">₹899</td></tr>
+            <tr><th scope="row">Appliance service</th><td>Air conditioner serviced</td><td class="num col-us">₹599</td></tr>
+            <tr><th scope="row">Appliance service</th><td>Washing machine or fridge diagnosed</td><td class="num col-us">₹599</td></tr>
+            <tr><th scope="row">Appliance service</th><td>Water purifier serviced</td><td class="num col-us">₹699</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">An inspection fee of ₹299 applies to each visit and is taken off the bill if you go ahead. Payment is by UPI, card or bank transfer, after the work is tested.</p>
+    </div>
+  </section>
+
+  <section class="band band-raised" aria-labelledby="prep-title">
+    <div class="wrap split">
+      <div class="split-head">
+        <h2 id="prep-title">Before we arrive</h2>
+        <p>Four small things that help us finish in one visit.</p>
+      </div>
+      <ol class="includes" style="columns:1;margin-top:0;font-size:1.05rem;color:var(--kinari)">
+        <li>Tell us the brand and model of any appliance, if you can find it.</li>
+        <li>Send a photo of the problem on WhatsApp when you reserve.</li>
+        <li>Clear the area around the fault so we can reach it.</li>
+        <li>Let building security know we are coming, with our names.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="not-title">
+    <div class="wrap split">
+      <div class="split-head">
+        <h2 id="not-title">What we do not take on yet</h2>
+      </div>
+      <div>
+        <ul class="not-list">
+          <li>Painting</li><li>Pest control</li><li>Civil and tiling work</li><li>Deep cleaning</li>
+        </ul>
+        <p class="muted" style="margin-top:1.5rem">We are adding services slowly, one at a time, and only when we have specialists we trust. Ask your technician for a recommendation in the meantime.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-raised" aria-labelledby="faq-title">
+    <div class="wrap split">
+      <div class="split-head">
+        <h2 id="faq-title">Questions before you book</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Is the price really fixed?</summary>
+          <p>Yes. After the diagnosis you get one price for labour and parts. Work starts only when you approve it, and nothing is added afterwards without your say.</p>
+        </details>
+        <details>
+          <summary>What does the warranty cover?</summary>
+          <p>Our workmanship, for 30 days. If the same fault returns, we come back free. Parts carry their manufacturer's warranty, and we give you the bill.</p>
+        </details>
+        <details>
+          <summary>Can you fit parts I have already bought?</summary>
+          <p>Yes. We charge labour only and warrant our fitting, though not the part itself.</p>
+        </details>
+        <details>
+          <summary>Which appliance brands do you service?</summary>
+          <p>Most major brands sold in India. Tell us the brand and model when you reserve and we will confirm before the visit.</p>
+        </details>
+        <details>
+          <summary>What if I need to change the day?</summary>
+          <p>Move or cancel a visit without charge up to 12 hours before it starts.</p>
+        </details>
+        <details>
+          <summary>Which areas do you serve?</summary>
+          <p>Select neighbourhoods in Bengaluru for now. Share your address when you reserve and we will tell you straight away whether we can reach you.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="closing-title">
+    <div class="wrap">
+      <div class="closing">
+        <div>
+          <h2 id="closing-title">Not sure which service you need?</h2>
+          <p>Describe the problem and we will send the right person. Lines are open 8 am to 8 pm, every day.</p>
+        </div>
+        <div class="closing-actions">
+          <a class="btn btn-solid" href="contact.html#reserve">Reserve a visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="wordmark" href="index.html">Sabisu</a>
+        <p class="footer-tag">Thoughtful service. Lasting impact.</p>
+      </div>
+      <div>
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Reach us</h2>
+        <ul>
+          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li><a href="mailto:care@sabisu.example">care@sabisu.example</a></li>
+          <li><a href="contact.html#reserve">Reserve a visit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <ul>
+          <li>Visits: 8 am to 8 pm</li>
+          <li>Phone: 8 am to 8 pm</li>
+          <li>Every day of the week</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>© <span data-year>2026</span> Sabisu. All rights reserved.</p>
+      <p>Thoughtful service. Lasting impact.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
