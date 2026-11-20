@@ -1056,3 +1056,15 @@ a.hex:hover, a.hex:focus-visible { background: var(--olive); color: var(--ivory)
 .hive li a.hex:hover, .hive li a.hex:focus-visible { background: var(--olive); }
 .hex small { font-family: var(--sans); font-size: 0.78em; opacity: 0.85; }
 .looking { padding-block: clamp(3rem, 6vw, 5rem); }
+
+/* Hero highlights */
+.hero-points { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem 1.75rem; margin: 1.5rem 0 0; padding: 0; font-size: 0.98rem; color: var(--kinari); }
+.hero-points li { position: relative; padding-left: 1.5rem; }
+.hero-points li::before { content: ""; position: absolute; left: 0; top: 0.42em; width: 0.8rem; height: 0.8rem; background: var(--sand); clip-path: polygon(50% 0, 59% 41%, 100% 50%, 59% 59%, 50% 100%, 41% 59%, 0 50%, 41% 41%); }
+
+
+/* ---------- v5 — one scrolling page ---------- */
+.page-section, #top { scroll-margin-top: 5.5rem; }
+#reserve, .service { scroll-margin-top: 6.5rem; }
+h2.h1 { font-size: var(--t-h1); }
+.page-section > .page-head { border-top: 1px solid var(--rule); }

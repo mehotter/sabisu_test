@@ -172,3 +172,51 @@
     el.textContent = new Date().getFullYear();
   });
 })();
+
+
+// One-page behaviour: menu highlights the section in view, links carry the chosen service.
+(() => {
+  "use strict";
+  const nav = document.getElementById("site-nav");
+  if (!nav) return;
+  const links = Array.from(nav.querySelectorAll('a[href^="#"]:not(.btn)'));
+  const toggle = document.querySelector(".nav-toggle");
+
+  nav.addEventListener("click", (e) => {
+    if (e.target.closest("a") && nav.classList.contains("is-open") && toggle) toggle.click();
+  });
+
+  const targets = links.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+  const setCurrent = () => {
+    const line = window.scrollY + window.innerHeight * 0.35;
+    let current = targets[0];
+    targets.forEach((t) => { if (t.getBoundingClientRect().top + window.scrollY <= line) current = t; });
+    links.forEach((a) => {
+      if (current && a.getAttribute("href") === "#" + current.id) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+  };
+  let queued = false;
+  window.addEventListener("scroll", () => {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => { queued = false; setCurrent(); });
+  }, { passive: true });
+  setCurrent();
+
+  const reserve = document.getElementById("reserve-form");
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest("a[data-service]");
+    if (link && reserve) reserve.elements.service.value = link.dataset.service;
+  });
+  const jump = document.querySelector("form[data-jump]");
+  if (jump && reserve) {
+    jump.addEventListener("submit", (e) => {
+      e.preventDefault();
+      reserve.elements.service.value = jump.elements.service.value;
+      if (jump.elements.date.value) reserve.elements.date.value = jump.elements.date.value;
+      document.getElementById("reserve").scrollIntoView();
+      reserve.elements.name.focus({ preventScroll: true });
+    });
+  }
+})();
