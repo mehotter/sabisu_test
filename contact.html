@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact and reservations — Sabisu</title>
   <meta name="description" content="Reserve a Sabisu visit online, or reach us by phone, WhatsApp or email.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230f0e0d'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23c8a26b' stroke-width='1.6'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%234C582D'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23B4A279' stroke-width='1.6'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -20,8 +20,10 @@
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main">
       <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
       <a href="about.html">About us</a>
+      <a href="services.html">Services</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="media.html">Media</a>
       <a href="reviews.html">Reviews</a>
       <a href="contact.html" aria-current="page">Contact</a>
       <a class="btn btn-solid" href="contact.html#reserve">Reserve a visit</a>
@@ -35,7 +37,7 @@
     <div class="wrap page-head-row">
       <div>
         <h1>Reserve a visit, or just ask us something.</h1>
-        <p class="lede">Tell us what your home needs. We call back within two working hours to confirm the time and your fixed price. Nothing is charged until the visit is done.</p>
+        <p class="lede">Tell us what needs fixing. We call back within two working hours to confirm the time and your fixed price. Nothing is charged until the work is done and tested.</p>
       </div>
       <p class="seal" lang="ja" title="Otoiawase: enquiries">お問い合わせ</p>
     </div>
@@ -61,12 +63,10 @@
               <label for="r-service">Service</label>
               <select id="r-service" name="service" required data-error="Choose a service. If you are unsure, pick the closest and tell us in the notes.">
                 <option value="">Choose a service</option>
-                <option value="deep-clean">Deep clean</option>
-                <option value="housekeeping">Housekeeping</option>
-                <option value="kitchen-bath">Kitchen and bath detailing</option>
-                <option value="upholstery">Upholstery and carpet care</option>
-                <option value="laundry">Laundry and wardrobe care</option>
-                <option value="before-guests">Before-guests preparation</option>
+                <option value="electrical">Electrical</option>
+                <option value="plumbing">Plumbing</option>
+                <option value="carpentry">Carpentry</option>
+                <option value="appliance">Appliance service</option>
               </select>
             </div>
             <div class="field">
@@ -87,7 +87,7 @@
             </fieldset>
             <div class="field span-2">
               <label for="r-notes">Anything we should know (optional)</label>
-              <textarea id="r-notes" name="notes" placeholder="Size of home, pets, delicate surfaces, parking, a gate code"></textarea>
+              <textarea id="r-notes" name="notes" placeholder="What is wrong, appliance brand and model, parking, a gate code"></textarea>
             </div>
           </div>
           <div class="form-actions">
@@ -126,7 +126,7 @@
           </div>
           <div>
             <dt>After a visit</dt>
-            <dd><a href="tel:+910000000000">Request a 48-hour return</a><small>If anything was missed, call and we come back free</small></dd>
+            <dd><a href="tel:+910000000000">Claim the 30-day warranty</a><small>If the same fault returns, call and we come back free</small></dd>
           </div>
         </dl>
       </aside>
@@ -140,14 +140,17 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="mark-fade footer-mark"><img src="assets/sabisu-logo.webp" width="1179" height="1160" alt="Sabisu. Thoughtful service. Lasting impact." loading="lazy"></div>
+        <a class="wordmark" href="index.html">Sabisu</a>
+        <p class="footer-tag">Thoughtful service. Lasting impact.</p>
       </div>
       <div>
         <h2>Pages</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="media.html">Media</a></li>
           <li><a href="reviews.html">Reviews</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>

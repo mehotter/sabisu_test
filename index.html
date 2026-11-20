@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sabisu — Premium home care, six services done properly</title>
-  <meta name="description" content="Sabisu offers six premium home services, each delivered by a trained team at a fixed price. Thoughtful service. Lasting impact.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230f0e0d'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23c8a26b' stroke-width='1.6'/%3E%3C/svg%3E">
+  <title>Sabisu — Premium home repairs: electrical, plumbing, carpentry, appliances</title>
+  <meta name="description" content="Sabisu offers four premium home services: electrical, plumbing, carpentry and appliance service, at a fixed price agreed before work begins.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%234C582D'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23B4A279' stroke-width='1.6'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com">
@@ -21,8 +21,10 @@
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main">
       <a href="index.html" aria-current="page">Home</a>
-      <a href="services.html">Services</a>
       <a href="about.html">About us</a>
+      <a href="services.html">Services</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="media.html">Media</a>
       <a href="reviews.html">Reviews</a>
       <a href="contact.html">Contact</a>
       <a class="btn btn-solid" href="contact.html#reserve">Reserve a visit</a>
@@ -39,20 +41,18 @@
     <div class="wrap">
       <div class="hero2-grid">
         <div>
-          <p class="pill-note"><b>6</b> services only, each one mastered</p>
-          <h1>Premium home care, done properly.</h1>
-          <p class="lede">Trained teams, a fixed price before you book, and a lead who checks every room before anyone leaves. Reserve in a minute.</p>
+          <p class="pill-note"><b>4</b> services for expat homes and corporate residences</p>
+          <h1>Home repairs, done properly.</h1>
+          <p class="lede">Electrical, plumbing, carpentry and appliance service by qualified technicians. A fixed price before work begins, and every job tested before we leave.</p>
 
           <form class="book-card" action="contact.html" method="get">
             <div class="field">
-              <label for="hero-service">What does your home need?</label>
+              <label for="hero-service">What needs attention?</label>
               <select id="hero-service" name="service">
-                <option value="deep-clean">Deep clean</option>
-                <option value="housekeeping">Housekeeping</option>
-                <option value="kitchen-bath">Kitchen and bath detailing</option>
-                <option value="upholstery">Upholstery and carpet care</option>
-                <option value="laundry">Laundry and wardrobe care</option>
-                <option value="before-guests">Before-guests preparation</option>
+                <option value="electrical">Electrical</option>
+                <option value="plumbing">Plumbing</option>
+                <option value="carpentry">Carpentry</option>
+                <option value="appliance">Appliance service</option>
               </select>
             </div>
             <div class="field">
@@ -61,92 +61,45 @@
             </div>
             <button class="btn btn-solid" type="submit">Reserve a visit</button>
           </form>
-          <p class="hero-note">Serving select neighbourhoods in Bengaluru. Nothing is charged until the visit is done.</p>
+          <p class="hero-note">Serving select neighbourhoods in Bengaluru. Nothing is charged until the work is done.</p>
         </div>
 
         <div class="collage">
           <figure class="ph"><img src="https://images.unsplash.com/photo-1792269244087-57f1eb3b714d?auto=format&fit=crop&w=900&q=70" alt="A living room with dark velvet sofas and gold tables on a marble floor"></figure>
-          <figure class="ph"><img src="https://images.unsplash.com/photo-1724847885015-be191f1a47ef?auto=format&fit=crop&w=700&q=70" alt="A stack of neatly folded towels"></figure>
-          <figure class="ph"><img src="https://images.unsplash.com/photo-1600684388091-627109f3cd60?auto=format&fit=crop&w=700&q=70" alt="A modern kitchen with matte black cabinets"></figure>
+          <figure class="ph"><img src="https://images.unsplash.com/photo-1771681744660-d3ff70bc24a2?auto=format&fit=crop&w=700&q=70" alt="A bathroom sink with a polished brass tap"></figure>
+          <figure class="ph"><img src="https://images.unsplash.com/photo-1600684388091-627109f3cd60?auto=format&fit=crop&w=700&q=70" alt="A modern kitchen with built-in appliances"></figure>
           <div class="float-card float-a"><span class="stars" aria-hidden="true">★</span><span><strong>4.8 out of 5</strong>average customer rating</span></div>
-          <div class="float-card float-b"><span><strong>48 hours</strong>free return if we miss anything</span></div>
+          <div class="float-card float-b"><span><strong>30 days</strong>warranty on our workmanship</span></div>
         </div>
-      </div>
-
-      <div class="trust">
-        <div><strong>6</strong><span>services, nothing else</span></div>
-        <div><strong>Fixed</strong><span>price shown before you book</span></div>
-        <div><strong>2 hours</strong><span>to a confirmation call</span></div>
-        <div><strong>8 to 8</strong><span>open every day of the week</span></div>
       </div>
     </div>
   </section>
 
-  <!-- 2. Services -->
-  <section class="band band-ruled" aria-labelledby="services-title">
-    <div class="wrap">
-      <div class="head-row">
-        <div>
-          <h2 id="services-title">Choose a service</h2>
-          <p>Most apps list hundreds of jobs. We offer six, and train a team for each.</p>
-        </div>
-        <a class="btn" href="services.html">Compare all six</a>
+  <!-- 2. What are you looking for today? -->
+  <section class="looking band-raised" aria-labelledby="services-title">
+    <div class="wrap hive-layout">
+      <div>
+        <h2 id="services-title">What are you looking for today?</h2>
+        <p>We offer four services for now, and do each of them properly. Choose one to see what it covers and what it costs.</p>
+        <a class="btn" href="services.html">See all four services</a>
       </div>
-      <div class="tiles">
-        <a class="tile" href="services.html#deep-clean">
-          <img src="https://images.unsplash.com/photo-1792269244087-57f1eb3b714d?auto=format&fit=crop&w=800&q=70" alt="" loading="lazy">
-          <span class="tile-top"><span class="glyph" lang="ja" aria-hidden="true">清</span><span class="tag">Most booked</span></span>
-          <span class="tile-body">
-            <span class="tile-name">Deep clean</span>
-            <span class="tile-desc">The whole home, top to bottom.</span>
-            <span class="tile-foot"><span>5 to 7 hours</span><b>from ₹4,900</b></span>
-          </span>
-        </a>
-        <a class="tile" href="services.html#housekeeping">
-          <img src="https://images.unsplash.com/photo-1758272421751-963195322eaa?auto=format&fit=crop&w=800&q=70" alt="" loading="lazy">
-          <span class="tile-top"><span class="glyph" lang="ja" aria-hidden="true">整</span><span class="tag">Same person every visit</span></span>
-          <span class="tile-body">
-            <span class="tile-name">Housekeeping</span>
-            <span class="tile-desc">Regular upkeep, booked by the hour.</span>
-            <span class="tile-foot"><span>2 hours or more</span><b>from ₹450 an hour</b></span>
-          </span>
-        </a>
-        <a class="tile" href="services.html#kitchen-bath">
-          <img src="https://images.unsplash.com/photo-1600684388091-627109f3cd60?auto=format&fit=crop&w=800&q=70" alt="" loading="lazy">
-          <span class="tile-top"><span class="glyph" lang="ja" aria-hidden="true">磨</span></span>
-          <span class="tile-body">
-            <span class="tile-name">Kitchen and bath detailing</span>
-            <span class="tile-desc">Grout, scale and grease, gone.</span>
-            <span class="tile-foot"><span>3 to 4 hours</span><b>from ₹2,400</b></span>
-          </span>
-        </a>
-        <a class="tile" href="services.html#upholstery">
-          <img src="https://images.unsplash.com/photo-1621515949831-f6cee2a5d320?auto=format&fit=crop&w=800&q=70" alt="" loading="lazy">
-          <span class="tile-top"><span class="glyph" lang="ja" aria-hidden="true">織</span></span>
-          <span class="tile-body">
-            <span class="tile-name">Upholstery and carpet care</span>
-            <span class="tile-desc">Sofas, rugs and mattresses, by fabric.</span>
-            <span class="tile-foot"><span>2 to 3 hours</span><b>from ₹1,800</b></span>
-          </span>
-        </a>
-        <a class="tile" href="services.html#laundry">
-          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=70" alt="" loading="lazy">
-          <span class="tile-top"><span class="glyph" lang="ja" aria-hidden="true">洗</span></span>
-          <span class="tile-body">
-            <span class="tile-name">Laundry and wardrobe care</span>
-            <span class="tile-desc">Washed, pressed and put away in order.</span>
-            <span class="tile-foot"><span>About 3 hours</span><b>from ₹1,200</b></span>
-          </span>
-        </a>
-        <a class="tile" href="services.html#before-guests">
-          <img src="https://images.unsplash.com/photo-1761295908075-065ac2db0f5c?auto=format&fit=crop&w=800&q=70" alt="" loading="lazy">
-          <span class="tile-top"><span class="glyph" lang="ja" aria-hidden="true">迎</span><span class="tag">Festive season</span></span>
-          <span class="tile-body">
-            <span class="tile-name">Before-guests preparation</span>
-            <span class="tile-desc">The home made ready for an occasion.</span>
-            <span class="tile-foot"><span>4 to 5 hours</span><b>from ₹3,500</b></span>
-          </span>
-        </a>
+      <ul class="hive" aria-label="Our services">
+        <li><span class="hex hex-core"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0c2.600 28 19 44.600 50 50-31 5.400-47.400 22-50 50-2.600-28-19-44.600-50-50 31-5.400 47.400-22 50-50z"/></svg><span>Our services</span></span></li>
+        <li><a class="hex" href="services.html#electrical"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L5 13h6l-1 9 8-11h-6z"/></svg><span>Electrical</span><small>from ₹499</small></a></li>
+        <li><a class="hex" href="services.html#plumbing"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg><span>Plumbing</span><small>from ₹499</small></a></li>
+        <li><a class="hex" href="services.html#carpentry"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4l6 6-3 3-6-6z"/><path d="M12.500 8.500L4 17v3h3l8.500-8.500"/></svg><span>Carpentry</span><small>from ₹599</small></a></li>
+        <li><a class="hex" href="services.html#appliance"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 6h2"/></svg><span>Appliance service</span><small>from ₹599</small></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" aria-label="At a glance" style="padding-block:clamp(2.5rem,5vw,4rem)">
+    <div class="wrap">
+      <div class="trust" style="margin-top:0">
+        <div><strong>4</strong><span>services, each with its own specialists</span></div>
+        <div><strong>Fixed</strong><span>price agreed before work begins</span></div>
+        <div><strong>2 hours</strong><span>to a confirmation call</span></div>
+        <div><strong>8 to 8</strong><span>open every day of the week</span></div>
       </div>
     </div>
   </section>
@@ -157,7 +110,7 @@
       <div class="head-row">
         <div>
           <h2 id="plans-title">Ways to book</h2>
-          <p>One visit or a standing arrangement. Swipe to see them all.</p>
+          <p>One repair or a standing arrangement. Swipe to see them all.</p>
         </div>
         <div class="arrows">
           <button class="arrow" type="button" data-scroll="plans" data-dir="prev" aria-label="Previous plans">‹</button>
@@ -168,57 +121,37 @@
         <article class="card">
           <span class="tag">No commitment</span>
           <h3>Single visit</h3>
-          <p>Any of the six services, once, whenever you need it.</p>
-          <ul>
-            <li>Fixed price confirmed on the call</li>
-            <li>Free reschedule up to 12 hours before</li>
-            <li>48-hour return included</li>
-          </ul>
+          <p>One repair or installation, whenever you need it.</p>
+          <ul><li>Diagnosis first, then a fixed price</li><li>Free reschedule up to 12 hours before</li><li>30-day workmanship warranty</li></ul>
           <a class="btn" href="contact.html#reserve">Reserve a visit</a>
         </article>
         <article class="card">
-          <span class="tag">Most chosen</span>
-          <h3>Weekly care</h3>
-          <p>Housekeeping on fixed days, by the same professional each time.</p>
-          <ul>
-            <li>Your days and hours, held for you</li>
-            <li>A stand-in you have already met</li>
-            <li>Pause or stop with a week's notice</li>
-          </ul>
-          <a class="btn" href="contact.html?service=housekeeping#reserve">Start weekly care</a>
+          <span class="tag">New to the city</span>
+          <h3>Move-in setup</h3>
+          <p>Everything fitted and working before you unpack.</p>
+          <ul><li>Lights, fans and curtain rods fitted</li><li>Televisions and shelves mounted</li><li>Appliances connected and tested</li></ul>
+          <a class="btn" href="contact.html?service=carpentry#reserve">Plan a move-in</a>
         </article>
         <article class="card">
-          <span class="tag">Twice a year</span>
-          <h3>Seasonal reset</h3>
-          <p>A deep clean with kitchen and bath detailing, scheduled before each season turns.</p>
-          <ul>
-            <li>Both services on one day</li>
-            <li>The same lead as last time</li>
-            <li>We remind you; you just confirm</li>
-          </ul>
-          <a class="btn" href="contact.html?service=deep-clean#reserve">Plan a reset</a>
+          <span class="tag">Once a year</span>
+          <h3>Home health check</h3>
+          <p>A full inspection of wiring, plumbing and appliances, with a written report.</p>
+          <ul><li>Distribution board and earthing tested</li><li>Taps, drains and heaters checked</li><li>Small faults fixed on the spot</li></ul>
+          <a class="btn" href="contact.html?service=electrical#reserve">Book a health check</a>
         </article>
         <article class="card">
-          <span class="tag">Festivals and occasions</span>
-          <h3>Occasion care</h3>
-          <p>Preparation the day before guests arrive, and a return visit the morning after.</p>
-          <ul>
-            <li>Brass, silver and glassware polished</li>
-            <li>Guest rooms made ready</li>
-            <li>Morning-after tidy on request</li>
-          </ul>
-          <a class="btn" href="contact.html?service=before-guests#reserve">Book occasion care</a>
+          <span class="tag">Before summer</span>
+          <h3>Seasonal appliance care</h3>
+          <p>Air conditioners, purifiers and fridges serviced before they are needed most.</p>
+          <ul><li>All units in one visit</li><li>Genuine filters and parts</li><li>We remind you; you just confirm</li></ul>
+          <a class="btn" href="contact.html?service=appliance#reserve">Schedule a service</a>
         </article>
         <article class="card">
-          <span class="tag">New home</span>
-          <h3>Move-in ready</h3>
-          <p>A deep clean of an empty home, with fabric care for anything you bring along.</p>
-          <ul>
-            <li>Done before your furniture arrives</li>
-            <li>Cabinets and wardrobes cleaned inside</li>
-            <li>Keys can be collected and returned</li>
-          </ul>
-          <a class="btn" href="contact.html?service=deep-clean#reserve">Prepare a new home</a>
+          <span class="tag">Companies</span>
+          <h3>Residence maintenance</h3>
+          <p>Ongoing repairs for staff housing and guest houses.</p>
+          <ul><li>One account manager</li><li>One monthly invoice</li><li>A report after every visit</li></ul>
+          <a class="btn" href="capabilities.html">See how it works</a>
         </article>
       </div>
     </div>
@@ -239,12 +172,12 @@
             <tr><th scope="col"><span class="vh">What is compared</span></th><th scope="col" class="col-us">Sabisu</th><th scope="col">Typical booking app</th></tr>
           </thead>
           <tbody>
-            <tr><th scope="row">Services offered</th><td class="col-us">Six, each with its own trained team</td><td class="them">Hundreds, across many trades</td></tr>
-            <tr><th scope="row">Who comes</th><td class="col-us">Our own employees, the same faces on repeat visits</td><td class="them">Whoever is nearest and free</td></tr>
-            <tr><th scope="row">Price</th><td class="col-us">Fixed and confirmed before you book</td><td class="them">Can change with demand and add-ons</td></tr>
-            <tr><th scope="row">Quality check</th><td class="col-us">A lead inspects every room before leaving</td><td class="them">A rating request after the visit</td></tr>
-            <tr><th scope="row">If something is missed</th><td class="col-us">We return within 48 hours, free</td><td class="them">Raise a ticket and wait</td></tr>
-            <tr><th scope="row">Equipment and supplies</th><td class="col-us">Brought by the team, matched to your surfaces</td><td class="them">Varies by professional</td></tr>
+            <tr><th scope="row">Services offered</th><td class="col-us">Four, each with its own specialists</td><td class="them">Hundreds, across many trades</td></tr>
+            <tr><th scope="row">Who comes</th><td class="col-us">Our own qualified, verified technicians</td><td class="them">Whoever is nearest and free</td></tr>
+            <tr><th scope="row">Price</th><td class="col-us">Fixed and agreed before work begins</td><td class="them">Can grow with add-ons on the day</td></tr>
+            <tr><th scope="row">Parts</th><td class="col-us">Genuine, shown to you, with a bill</td><td class="them">Varies by professional</td></tr>
+            <tr><th scope="row">When the job is done</th><td class="col-us">Tested in front of you, area left clean</td><td class="them">A rating request</td></tr>
+            <tr><th scope="row">If the fault returns</th><td class="col-us">We come back free within 30 days</td><td class="them">Raise a ticket and wait</td></tr>
           </tbody>
         </table>
       </div>
@@ -254,15 +187,13 @@
   <!-- 5. How a visit goes -->
   <section class="band band-raised" aria-labelledby="visit-title">
     <div class="wrap">
-      <div class="band-head">
-        <h2 id="visit-title">How a visit goes</h2>
-      </div>
+      <div class="band-head"><h2 id="visit-title">How a visit goes</h2></div>
       <ol class="steps">
-        <li><h3>You reserve</h3><p>Choose a service and a day. The fixed price is shown before you confirm.</p></li>
-        <li><h3>We call</h3><p>Within two working hours we confirm the time and ask about your home: surfaces, pets, anything fragile.</p></li>
-        <li><h3>The team arrives</h3><p>In uniform and on time, carrying their own equipment and supplies.</p></li>
-        <li><h3>The lead inspects</h3><p>Before leaving, the lead walks each room with you and puts right anything that falls short.</p></li>
-        <li><h3>We check in</h3><p>One call the next day. If something was missed, we return within 48 hours at no charge.</p></li>
+        <li><h3>You reserve</h3><p>Choose a service and a day, and tell us what is wrong.</p></li>
+        <li><h3>We call</h3><p>Within two working hours we confirm the time and ask a few questions so the right person and parts arrive.</p></li>
+        <li><h3>We diagnose</h3><p>The technician inspects the problem and gives you a fixed price before any work begins.</p></li>
+        <li><h3>We fix and test</h3><p>The work is done, tested in front of you, and the area is left clean.</p></li>
+        <li><h3>We stand by it</h3><p>Our workmanship is covered for 30 days. If the fault returns, so do we, at no charge.</p></li>
       </ol>
     </div>
   </section>
@@ -270,26 +201,24 @@
   <!-- 6. Commitments -->
   <section class="band" aria-labelledby="hold-title">
     <div class="wrap">
-      <div class="band-head">
-        <h2 id="hold-title">What you can hold us to</h2>
-      </div>
+      <div class="band-head"><h2 id="hold-title">What you can hold us to</h2></div>
       <div class="commitments">
         <div class="commitment">
-          <h3>One price, agreed before we arrive</h3>
-          <p>No surge pricing and nothing added at the door. If the job turns out bigger than quoted, that is ours to absorb.</p>
+          <h3>A price agreed before work begins</h3>
+          <p>You approve the quote after the diagnosis. Nothing is added afterwards without your say.</p>
         </div>
         <div class="commitment">
-          <h3>People you recognise</h3>
-          <p>Regular bookings are served by the same team, so they learn your home and you learn their names.</p>
+          <h3>Qualified, verified people</h3>
+          <p>Licensed electricians, trained plumbers and carpenters, and brand-trained appliance technicians, all background-checked.</p>
         </div>
         <div class="commitment">
-          <h3>Verified, trained and insured</h3>
-          <p>Every professional passes a background check and completes our training before a first visit. Your home is covered while we work in it.</p>
+          <h3>Genuine parts, with a bill</h3>
+          <p>We show you the part before fitting it and hand back the one we replaced.</p>
         </div>
         <div class="commitment">
           <p class="seal" lang="ja" title="Hoshō: guarantee">保証</p>
-          <h3>The 48-hour return</h3>
-          <p>Tell us within two days if anything was missed. We come back and redo it, free.</p>
+          <h3>The 30-day warranty</h3>
+          <p>If the same fault returns within 30 days, we come back and put it right, free.</p>
         </div>
       </div>
     </div>
@@ -298,11 +227,11 @@
   <!-- 7. About teaser -->
   <section class="band band-ruled" aria-labelledby="about-title">
     <div class="wrap teaser">
-      <div class="mark-fade"><img src="assets/sabisu-logo.webp" width="1179" height="1160" alt="The Sabisu mark: two open hands drawn in one gold line around the name." loading="lazy"></div>
+      <div class="star-wrap"><svg class="star-mark" viewBox="0 0 100 100" role="img" aria-label="Sabisu star"><g fill="currentColor"><path d="M50 0c2.600 28 19 44.600 50 50-31 5.400-47.400 22-50 50-2.600-28-19-44.600-50-50 31-5.400 47.400-22 50-50z"/></g></svg></div>
       <div>
         <h2 id="about-title">Service, said the Japanese way.</h2>
         <p>Sabisu is how “service” is written and spoken in Japanese. We borrowed the word, and the idea behind it: notice what a guest will need, and attend to it before they ask.</p>
-        <p>Two hands make our mark. One offers and one receives.</p>
+        <p>Our star stands for the standard we hold ourselves to on every visit.</p>
         <a class="btn" href="about.html">Read our story</a>
       </div>
     </div>
@@ -325,39 +254,39 @@
       <div class="scroller" id="home-reviews" tabindex="0" aria-label="Customer reviews">
         <article class="card card-review">
           <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>They moved the sofa, cleaned under it and put it back exactly where it was. I only knew because the floor was shining.</blockquote>
+          <blockquote>The electrician found a loose neutral that two others had missed, fixed it, and then tested every socket in the flat without being asked.</blockquote>
           <div class="review-who">Meera S., Indiranagar</div>
-          <div class="review-what">Deep clean</div>
+          <div class="review-what">Electrical</div>
         </article>
         <article class="card card-review">
           <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>Lakshmi has come every weekday for four months. She knows where everything goes, and my mother no longer supervises.</blockquote>
+          <blockquote>A leak behind the bathroom wall, traced with a meter rather than a hammer. One tile lifted, one joint replaced, and the wall put back the same day.</blockquote>
           <div class="review-who">Arjun R., Koramangala</div>
-          <div class="review-what">Housekeeping</div>
+          <div class="review-what">Plumbing</div>
         </article>
         <article class="card card-review">
           <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>Eight years of hard-water marks on the bathroom glass, gone in an afternoon. The lead showed me how to keep it that way.</blockquote>
+          <blockquote>Our wardrobe doors had not closed properly in years. New channels and hinges, and now they shut with one finger.</blockquote>
           <div class="review-who">Priya N., Whitefield</div>
-          <div class="review-what">Kitchen and bath detailing</div>
+          <div class="review-what">Carpentry</div>
         </article>
         <article class="card card-review">
           <span class="stars" role="img" aria-label="4 out of 5">★★★★<span class="off">★</span></span>
-          <blockquote>Very thorough work. The team ran forty minutes late in traffic, but they called ahead and stayed until every room was finished.</blockquote>
+          <blockquote>Very thorough air conditioner service. The technician ran forty minutes late in traffic, but called ahead and stayed until all three units were done.</blockquote>
           <div class="review-who">Rohan D., HSR Layout</div>
-          <div class="review-what">Deep clean</div>
+          <div class="review-what">Appliance service</div>
         </article>
         <article class="card card-review">
           <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>Twenty relatives for Deepavali and I did not lift a cloth. The brass lamps looked the way they did in my grandmother's house.</blockquote>
-          <div class="review-who">Kavitha M., Jayanagar</div>
-          <div class="review-what">Before-guests preparation</div>
+          <blockquote>We had just moved from Singapore. They mounted the televisions, fitted the lights and connected the washing machine in one visit.</blockquote>
+          <div class="review-who">Daniel K., Sadashivanagar</div>
+          <div class="review-what">Carpentry</div>
         </article>
         <article class="card card-review">
           <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>They tested a hidden corner of the linen sofa before touching the rest. The turmeric stain is gone and the fabric is unharmed.</blockquote>
-          <div class="review-who">Sneha K., Sadashivanagar</div>
-          <div class="review-what">Upholstery and carpet care</div>
+          <blockquote>The price quoted before the work was the price I paid, even though the washing machine needed a second part. That alone will bring me back.</blockquote>
+          <div class="review-who">Farah A., Koramangala</div>
+          <div class="review-what">Appliance service</div>
         </article>
       </div>
     </div>
@@ -375,24 +304,24 @@
       </div>
       <div class="faq">
         <details open>
-          <summary>Do I need to provide equipment or supplies?</summary>
-          <p>No. Each team brings its own machines, cloths and products. If you prefer particular products, or someone at home has allergies, tell us on the confirmation call.</p>
+          <summary>Is there a charge just for the visit?</summary>
+          <p>There is a small inspection fee, shown when you reserve. If you go ahead with the repair, it is taken off the bill.</p>
         </details>
         <details>
           <summary>Is the price really fixed?</summary>
-          <p>Yes. It depends on the service and the size of your home, and you see it before you confirm. It does not change on the day.</p>
+          <p>Yes. After the diagnosis the technician gives you one price for labour and parts. Work starts only when you approve it.</p>
+        </details>
+        <details>
+          <summary>Do you bring the parts?</summary>
+          <p>Common parts travel with the technician. Anything unusual is ordered and fitted on a second visit at no extra visit charge.</p>
         </details>
         <details>
           <summary>How do I pay?</summary>
-          <p>After the visit, once the lead's walk-through is done. We accept UPI, cards and bank transfer, and send a receipt the same day.</p>
+          <p>After the work is tested. We accept UPI, cards and bank transfer, and send a receipt the same day.</p>
         </details>
         <details>
-          <summary>Are the products safe for children and pets?</summary>
-          <p>We use low-odour, non-caustic products by default and keep stronger descalers for bathrooms only. Tell us about pets or infants and the team will plan around them.</p>
-        </details>
-        <details>
-          <summary>What if I need to change the day?</summary>
-          <p>Move or cancel a visit without charge up to 12 hours before it starts.</p>
+          <summary>Do you handle emergencies?</summary>
+          <p>Call us between 8 am and 8 pm. For a burst pipe or a power failure we send the nearest free technician first.</p>
         </details>
       </div>
     </div>
@@ -403,7 +332,7 @@
     <div class="wrap">
       <div class="closing">
         <div>
-          <h2 id="closing-title">Your home, looked after properly.</h2>
+          <h2 id="closing-title">Something at home needs fixing?</h2>
           <p>Reserve online in a minute, or speak to us first. Lines are open 8 am to 8 pm, every day.</p>
         </div>
         <div class="closing-actions">
@@ -424,14 +353,17 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="mark-fade footer-mark"><img src="assets/sabisu-logo.webp" width="1179" height="1160" alt="Sabisu. Thoughtful service. Lasting impact." loading="lazy"></div>
+        <a class="wordmark" href="index.html">Sabisu</a>
+        <p class="footer-tag">Thoughtful service. Lasting impact.</p>
       </div>
       <div>
         <h2>Pages</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="media.html">Media</a></li>
           <li><a href="reviews.html">Reviews</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>

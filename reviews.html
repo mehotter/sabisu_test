@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Reviews — Sabisu</title>
   <meta name="description" content="What Sabisu customers say after a visit, and a place to share your own.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230f0e0d'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23c8a26b' stroke-width='1.6'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%234C582D'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23B4A279' stroke-width='1.6'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -20,8 +20,10 @@
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main">
       <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
       <a href="about.html">About us</a>
+      <a href="services.html">Services</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="media.html">Media</a>
       <a href="reviews.html" aria-current="page">Reviews</a>
       <a href="contact.html">Contact</a>
       <a class="btn btn-solid" href="contact.html#reserve">Reserve a visit</a>
@@ -58,80 +60,68 @@
 
       <div class="chips" role="group" aria-label="Filter reviews by service">
         <button class="chip" type="button" data-filter="all" aria-pressed="true">All services</button>
-        <button class="chip" type="button" data-filter="deep-clean" aria-pressed="false">Deep clean</button>
-        <button class="chip" type="button" data-filter="housekeeping" aria-pressed="false">Housekeeping</button>
-        <button class="chip" type="button" data-filter="kitchen-bath" aria-pressed="false">Kitchen and bath</button>
-        <button class="chip" type="button" data-filter="upholstery" aria-pressed="false">Upholstery and carpet</button>
-        <button class="chip" type="button" data-filter="laundry" aria-pressed="false">Laundry and wardrobe</button>
-        <button class="chip" type="button" data-filter="before-guests" aria-pressed="false">Before guests</button>
+        <button class="chip" type="button" data-filter="electrical" aria-pressed="false">Electrical</button>
+        <button class="chip" type="button" data-filter="plumbing" aria-pressed="false">Plumbing</button>
+        <button class="chip" type="button" data-filter="carpentry" aria-pressed="false">Carpentry</button>
+        <button class="chip" type="button" data-filter="appliance" aria-pressed="false">Appliance service</button>
       </div>
       <p class="filter-status" id="filter-status" aria-live="polite">Showing all 9 reviews</p>
 
       <div class="review-list">
-
-        <article class="review" data-service="deep-clean" data-rating="5">
+        <article class="review" data-service="electrical" data-rating="5">
           <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>They moved the sofa, cleaned under it and put it back exactly where it was. I only knew because the floor was shining.</blockquote>
+          <blockquote>The electrician found a loose neutral that two others had missed, fixed it, and then tested every socket in the flat without being asked.</blockquote>
           <div class="review-who">Meera S., Indiranagar</div>
-          <div class="review-what">Deep clean, October 2026</div>
+          <div class="review-what">Electrical, October 2026</div>
         </article>
-
-        <article class="review" data-service="housekeeping" data-rating="5">
+        <article class="review" data-service="plumbing" data-rating="5">
           <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>Lakshmi has come every weekday for four months. She knows where everything goes, and my mother no longer supervises. That is the highest praise this house can give.</blockquote>
+          <blockquote>A leak behind the bathroom wall, traced with a meter rather than a hammer. One tile lifted, one joint replaced, and the wall put back the same day.</blockquote>
           <div class="review-who">Arjun R., Koramangala</div>
-          <div class="review-what">Housekeeping, October 2026</div>
+          <div class="review-what">Plumbing, October 2026</div>
         </article>
-
-        <article class="review" data-service="kitchen-bath" data-rating="5">
+        <article class="review" data-service="carpentry" data-rating="5">
           <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>I had given up on the bathroom glass. Eight years of hard-water marks, gone in an afternoon. The lead showed me how to keep it that way.</blockquote>
+          <blockquote>Our wardrobe doors had not closed properly in years. New channels and hinges, and now they shut with one finger.</blockquote>
           <div class="review-who">Priya N., Whitefield</div>
-          <div class="review-what">Kitchen and bath detailing, September 2026</div>
+          <div class="review-what">Carpentry, September 2026</div>
         </article>
-
-        <article class="review" data-service="before-guests" data-rating="5">
-          <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>Twenty relatives for Deepavali and I did not lift a cloth. The brass lamps looked the way they did in my grandmother's house.</blockquote>
-          <div class="review-who">Kavitha M., Jayanagar</div>
-          <div class="review-what">Before-guests preparation, November 2026</div>
-        </article>
-
-        <article class="review" data-service="deep-clean" data-rating="4">
+        <article class="review" data-service="appliance" data-rating="4">
           <span class="stars" role="img" aria-label="4 out of 5">★★★★<span class="off">★</span></span>
-          <blockquote>Very thorough work. The team ran forty minutes late because of traffic, but they called ahead to tell me and stayed until every room was finished.</blockquote>
+          <blockquote>Very thorough air conditioner service. The technician ran forty minutes late in traffic, but called ahead and stayed until all three units were done.</blockquote>
           <div class="review-who">Rohan D., HSR Layout</div>
-          <div class="review-what">Deep clean, September 2026</div>
+          <div class="review-what">Appliance service, September 2026</div>
         </article>
-
-        <article class="review" data-service="upholstery" data-rating="5">
+        <article class="review" data-service="carpentry" data-rating="5">
           <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>They tested a hidden corner of the linen sofa before touching the rest. Nobody has ever done that. The turmeric stain is gone and the fabric is unharmed.</blockquote>
-          <div class="review-who">Sneha K., Sadashivanagar</div>
-          <div class="review-what">Upholstery and carpet care, August 2026</div>
+          <blockquote>We had just moved from Singapore. They mounted the televisions, fitted the lights and connected the washing machine in one visit.</blockquote>
+          <div class="review-who">Daniel K., Sadashivanagar</div>
+          <div class="review-what">Carpentry, November 2026</div>
         </article>
-
-        <article class="review" data-service="laundry" data-rating="5">
+        <article class="review" data-service="appliance" data-rating="5">
           <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>My silk saris came back pressed and wrapped in muslin, and the wardrobe was arranged by occasion. I can find things now.</blockquote>
-          <div class="review-who">Anita V., Malleshwaram</div>
-          <div class="review-what">Laundry and wardrobe care, October 2026</div>
-        </article>
-
-        <article class="review" data-service="housekeeping" data-rating="4">
-          <span class="stars" role="img" aria-label="4 out of 5">★★★★<span class="off">★</span></span>
-          <blockquote>Reliable and careful. I would like an earlier morning slot than 8 am, which is the only reason this is not five stars.</blockquote>
-          <div class="review-who">Vikram P., Indiranagar</div>
-          <div class="review-what">Housekeeping, August 2026</div>
-        </article>
-
-        <article class="review" data-service="kitchen-bath" data-rating="5">
-          <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
-          <blockquote>The price they quoted on the phone was the price I paid, even though the chimney took an extra hour. That alone will bring me back.</blockquote>
+          <blockquote>The price quoted before the work was the price I paid, even though the washing machine needed a second part. That alone will bring me back.</blockquote>
           <div class="review-who">Farah A., Koramangala</div>
-          <div class="review-what">Kitchen and bath detailing, July 2026</div>
+          <div class="review-what">Appliance service, July 2026</div>
         </article>
-
+        <article class="review" data-service="plumbing" data-rating="5">
+          <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
+          <blockquote>The geyser was installed, pressure-tested and explained to my mother in Kannada. No mess left in the bathroom at all.</blockquote>
+          <div class="review-who">Kavitha M., Jayanagar</div>
+          <div class="review-what">Plumbing, November 2026</div>
+        </article>
+        <article class="review" data-service="electrical" data-rating="4">
+          <span class="stars" role="img" aria-label="4 out of 5">★★★★<span class="off">★</span></span>
+          <blockquote>Reliable and careful work on the distribution board. I would like an earlier slot than 8 am, which is the only reason this is not five stars.</blockquote>
+          <div class="review-who">Vikram P., Indiranagar</div>
+          <div class="review-what">Electrical, August 2026</div>
+        </article>
+        <article class="review" data-service="electrical" data-rating="5">
+          <span class="stars" role="img" aria-label="5 out of 5">★★★★★</span>
+          <blockquote>They manage repairs across our eleven company apartments. One call, one invoice, and a report after every visit.</blockquote>
+          <div class="review-who">Sneha K., facilities manager</div>
+          <div class="review-what">Electrical, August 2026</div>
+        </article>
       </div>
     </div>
   </section>
@@ -163,12 +153,10 @@
               <label for="review-service">Service you booked</label>
               <select id="review-service" name="service" required data-error="Choose the service you booked.">
                 <option value="">Choose a service</option>
-                <option value="deep-clean">Deep clean</option>
-                <option value="housekeeping">Housekeeping</option>
-                <option value="kitchen-bath">Kitchen and bath detailing</option>
-                <option value="upholstery">Upholstery and carpet care</option>
-                <option value="laundry">Laundry and wardrobe care</option>
-                <option value="before-guests">Before-guests preparation</option>
+                <option value="electrical">Electrical</option>
+                <option value="plumbing">Plumbing</option>
+                <option value="carpentry">Carpentry</option>
+                <option value="appliance">Appliance service</option>
               </select>
             </div>
             <div class="field span-2">
@@ -195,14 +183,17 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="mark-fade footer-mark"><img src="assets/sabisu-logo.webp" width="1179" height="1160" alt="Sabisu. Thoughtful service. Lasting impact." loading="lazy"></div>
+        <a class="wordmark" href="index.html">Sabisu</a>
+        <p class="footer-tag">Thoughtful service. Lasting impact.</p>
       </div>
       <div>
         <h2>Pages</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="media.html">Media</a></li>
           <li><a href="reviews.html">Reviews</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
